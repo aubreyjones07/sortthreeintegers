@@ -1,0 +1,17 @@
+function sortThreeArgs(firstArg, secondArg, thirdArg) {
+var result; 
+if (firstArg < secondArg && secondArg < thirdArg) {
+result = firstArg + ", " + secondArg + ", " + thirdArg; 
+} else {
+result = secondArg + ", " + firstArg + ", " + thirdArg; 
+}
+return result;
+
+} 
+
+var myResult = sortThreeArgs(2, 1, 4);
+alert(myResult);
+myResult = sortThreeArgs(5, 1, 7);
+alert(myResult);
+myResult = sortThreeArgs(5, 2, 8);
+alert(myResult);
